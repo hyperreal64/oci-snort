@@ -15,4 +15,4 @@ mkdir /etc/snort/rules/iplists
 touch /etc/snort/rules/{black,white}_list.rules
 pulledpork -c /etc/pulledpork/pulledpork.conf
 
-snort -D -l /var/log/snort -u snort -g snort -c /etc/snort/snort.conf
+snort -D -l /var/log/snort -h $HOME_NET -u snort -g snort -c /etc/snort/snort.conf
